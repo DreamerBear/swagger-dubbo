@@ -1,5 +1,7 @@
 package com.chevrolet.api.dto;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,52 +17,62 @@ import java.util.Date;
  * 注意：本内容仅限于卖好车内部传阅，禁止外泄以及用于其他的商业目
  */
 @Data
+@ApiModel(description = "车厂")
 public class FactoryDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
      */
+    @ApiModelProperty(value = "主键ID")
     private Long factoryId;
 
     /**
      * 厂商名称
      */
+    @ApiModelProperty(value = "厂商名称")
     private String factoryName;
 
     /**
      * 厂商类型(国产 1 中规 10 平行进口100)
      */
+    @ApiModelProperty(value = "厂商类型(国产 1 中规 10 平行进口100)")
     private Integer factoryType;
 
     /**
      * 厂商状态
      */
+    @ApiModelProperty(value = "厂商状态")
     private Integer status;
 
     /**
      * database column b2b_factory.gmt_create
      */
+    @ApiModelProperty(value = "创建时间")
     private Date gmtCreate;
 
     /**
      * database column b2b_factory.gmt_modified
      */
+    @ApiModelProperty(value = "修改时间")
     private Date gmtModified;
 
     /**
      * 外部ID
      */
+    @ApiModelProperty(value = "外部ID")
     private String outerId;
 
     /**
      * 1:汽车之家 2:陈行168
      */
+    @ApiModelProperty(value = "1:汽车之家 2:陈行168")
     private Integer source;
 
     /**
      * 车规
      */
+    @ApiModelProperty(value = "车规")
     private Integer standard;
 
 }

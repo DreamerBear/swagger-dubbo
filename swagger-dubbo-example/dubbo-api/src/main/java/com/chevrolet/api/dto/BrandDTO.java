@@ -1,35 +1,44 @@
 package com.chevrolet.api.dto;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 /**
  * Created by weishuai on 16/1/15.
  */
-public class BrandDTO implements Serializable{
+@ApiModel(description = "品牌")
+public class BrandDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     /**
      * 品牌Id
      */
+    @ApiModelProperty(value = "品牌Id")
     private Long brandId;
 
     /**
      * 品牌Icon,展示的是汽车之家的品牌logo
      */
+    @ApiModelProperty(value = "品牌Icon,展示的是汽车之家的品牌logo")
     private String brandPic;
 
     /**
      * 品牌名称
      */
+    @ApiModelProperty(value = "品牌名称")
     private String brandName;
 
     /**
      * 品牌名称首字母
      */
+    @ApiModelProperty(value = "品牌名称首字母")
     private String brandLetter;
 
     /**
      * 对应 auto pic
      */
+    @ApiModelProperty(value = "对应 auto pic")
     private String smallPic;
 
 
