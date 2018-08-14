@@ -93,8 +93,17 @@ public interface CarAssetService {
     @ApiOperation("变更单取消")
     BizResult<Boolean> cancelChgRecord(AssetRightChgDTO assetRightChgDTO);
 
-
-    @ApiOperation("查询物权变更单")
+    /**
+     * <p> 查询物权变更记录 </p>
+     * @param assetRightChgQueryDTO
+     * @return BizResult<List<AssetRightChgResultDTO>>
+     * @throws
+     * @author
+     * @date
+     * @since
+     *
+     */
+    @ApiOperation("查询物权变更记录")
     BizResult<List<AssetRightChgResultDTO>> queryAssetRightChgRecords(AssetRightChgQueryDTO assetRightChgQueryDTO);
 
 }

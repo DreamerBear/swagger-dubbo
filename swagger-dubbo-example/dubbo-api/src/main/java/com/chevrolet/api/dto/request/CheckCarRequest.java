@@ -1,6 +1,7 @@
 package com.chevrolet.api.dto.request;
 
 import com.mhc.bs.common.base.BaseDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.Date;
@@ -20,29 +21,36 @@ public class CheckCarRequest extends BaseDTO {
     /**
      * 车辆中心car_id集合
      */
+    @ApiModelProperty(value = "车辆中心car_id集合")
     private List<Long> carIds;
     /**
      * 业务来源集合
      */
+    @ApiModelProperty(value = "业务来源集合")
     private List<Integer> bizSource;
     /**
      * 关联的业务单号集合
      */
+    @ApiModelProperty(value = "关联的业务单号集合")
     private List<String> bizOrderNos;
     /**
      * 终端类型集合
      */
+    @ApiModelProperty(value = "终端类型集合")
     private List<Integer> checkTerminal;
     /**
      * 验车开始时间
      */
+    @ApiModelProperty(value = "验车开始时间")
     private Date checkBeginDate;
     /**
      * 验车结束时间集合
      */
+    @ApiModelProperty(value = "验车结束时间集合")
     private Date checkEndDate;
     /**
      * 是否有效集合
      */
+    @ApiModelProperty(value = "是否有效集合")
     private List<Integer> isDeleted;
 }

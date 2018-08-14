@@ -1,6 +1,7 @@
 package com.chevrolet.api.dto;
 
 import com.mhc.bs.common.base.BaseDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.BufferedReader;
@@ -24,91 +25,113 @@ public class CheckCarDTO extends BaseDTO {
     /**
      * 验车单ID
      */
+    @ApiModelProperty(value = "验车单ID")
     private Long checkIssueId;
     /**
      * 车辆中心car_id
      */
+    @ApiModelProperty(value = "车辆中心car_id")
     private Long ccCarId;
     /**
      * 业务来源
      */
+    @ApiModelProperty(value = "业务来源")
     private Integer bizSource;
     /**
      * 业务类型
      */
+    @ApiModelProperty(value = "业务类型")
     private Integer bizType;
     /**
      * 关联的业务单号
      */
+    @ApiModelProperty(value = "关联的业务单号")
     private String bizOrderNo;
     /**
      * 用什么端完成的验车
      */
+    @ApiModelProperty(value = "用什么端完成的验车")
     private Integer checkTerminal;
     /**
      * 验车开始时间
      */
+    @ApiModelProperty(value = "验车开始时间")
     private Date checkBeginDate;
     ;
     /**
      * 验车结束时间
      */
+    @ApiModelProperty(value = "验车结束时间")
     private Date checkEndDate;
     /**
      * 验车人工号
      */
+    @ApiModelProperty(value = "验车人工号")
     private Long checkerStaffId;
     /**
      * 验车人姓名
      */
+    @ApiModelProperty(value = "验车人姓名")
     private String checkerName;
     /**
      * 生产日期
      */
+    @ApiModelProperty(value = "生产日期")
     private String productionDate;
     /**
      * 里程数
      */
+    @ApiModelProperty(value = "里程数")
     private Double odometer;
     /**
      * 钥匙数量
      */
+    @ApiModelProperty(value = "钥匙数量")
     private Integer keyCount;
     /**
      * 是否有关单
      */
+    @ApiModelProperty(value = "是否有关单")
     private Integer customsClearanceStatus;
     /**
      * 一致性证书
      */
+    @ApiModelProperty(value = "一致性证书")
     private Integer hasCertificateConformity;
     /**
      * 商检单
      */
+    @ApiModelProperty(value = "商检单")
     private Integer hasCommodityInspection;
     /**
      * 是否有说明书
      */
+    @ApiModelProperty(value = "是否有说明书")
     private Integer hasInstructionBook;
     /**
      * 说明书
      */
+    @ApiModelProperty(value = "说明书")
     private String remark;
     /**
      * 是否已删除
      */
+    @ApiModelProperty(value = "是否已删除")
     private Integer isDeleted;
     /**
      * 验车资源列表
      */
+    @ApiModelProperty(value = "验车资源列表")
     private List<CheckResourceDTO> checkResourceList;
     /**
      * 记录操作人员ID
      */
+    @ApiModelProperty(value = "记录操作人员ID")
     private Integer operatorId;
     /**
      * 记录操作人员姓名
      */
+    @ApiModelProperty(value = "记录操作人员姓名")
     private String operatorName;
 
 }

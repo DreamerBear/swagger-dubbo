@@ -8,6 +8,7 @@
  */
 package com.chevrolet.api.dto;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -26,10 +27,12 @@ public class CarLockStatusDTO implements Serializable {
     /**
      * ccCarId
      */
+    @ApiModelProperty(value = "ccCarId")
     private Long ccCarId;
 
     /**
      * 车辆锁状态
      */
+    @ApiModelProperty(value = "车辆锁状态")
     private Integer locked;
 }

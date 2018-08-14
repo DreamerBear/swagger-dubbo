@@ -3,6 +3,7 @@ package com.chevrolet.api.service;
 import com.chevrolet.api.dto.CheckCarDTO;
 import com.chevrolet.api.dto.request.CheckCarRequest;
 import com.mhc.bs.common.base.APIResult;
+import io.swagger.annotations.ApiOperation;
 
 import java.util.List;
 
@@ -27,6 +28,7 @@ public interface CheckCarFacade {
      * @since V1.1.0-SNAPSHOT
      *
      */
+    @ApiOperation("根据指定条件获取验车数据")
     APIResult<List<CheckCarDTO>> listCheckCarsByRequest(CheckCarRequest checkCarRequest);
 
     /**
@@ -34,6 +36,7 @@ public interface CheckCarFacade {
      * @param checkCarDTO
      * @return
      */
+    @ApiOperation("新增验车数据")
     APIResult<Long> addCheckCar(CheckCarDTO checkCarDTO);
 
     /**
@@ -41,6 +44,7 @@ public interface CheckCarFacade {
      * @param checkCarDTO
      * @return
      */
+    @ApiOperation("更新验车数据")
     APIResult<Boolean> updateCheckCar(CheckCarDTO checkCarDTO);
 
 }

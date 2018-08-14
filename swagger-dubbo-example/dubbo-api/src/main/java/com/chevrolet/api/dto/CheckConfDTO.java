@@ -1,6 +1,7 @@
 package com.chevrolet.api.dto;
 
 import com.mhc.bs.common.base.BaseDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -18,19 +19,23 @@ public class CheckConfDTO extends BaseDTO {
     /**
      * 验车项
      */
+    @ApiModelProperty(value = "验车项")
     private Integer checkItemType;
 
     /**
      * 验车项名称
      */
+    @ApiModelProperty(value = "验车项名称")
     private String checkItemName;
     /**
      * 验车资源文件类型
      */
+    @ApiModelProperty(value = "验车资源文件类型")
     private Integer resourceType;
 
     /**
      * 是否删除
      */
+    @ApiModelProperty(value = "是否删除")
     private Integer isDeleted;
 }

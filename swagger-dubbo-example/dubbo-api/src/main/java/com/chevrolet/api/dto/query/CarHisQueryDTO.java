@@ -8,6 +8,7 @@
  */
 package com.chevrolet.api.dto.query;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
 
@@ -31,5 +32,6 @@ public class CarHisQueryDTO implements Serializable {
     /**
      * carId + 更改时间查询唯一记录
      */
+    @ApiModelProperty(value = "carId + 更改时间查询唯一记录")
     private Map<Long, Date> idAndUpdateTime;
 }

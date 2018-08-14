@@ -14,6 +14,7 @@ package com.chevrolet.api.service;
 import com.chevrolet.api.dto.CheckConfDTO;
 import com.chevrolet.api.dto.request.CheckConfRequest;
 import com.mhc.bs.common.base.APIResult;
+import io.swagger.annotations.ApiOperation;
 
 import java.util.List;
 
@@ -35,5 +36,6 @@ public interface CheckConfFacade {
      * @since V1.1.0-SNAPSHOT
      *
      */
+    @ApiOperation("根据条件查询验车服务配置")
     APIResult<List<CheckConfDTO>> listCheckConfByRequest(CheckConfRequest checkConfRequest);
 }

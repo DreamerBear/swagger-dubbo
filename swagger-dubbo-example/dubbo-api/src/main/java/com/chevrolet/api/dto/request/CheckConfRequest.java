@@ -1,6 +1,7 @@
 package com.chevrolet.api.dto.request;
 
 import com.mhc.bs.common.base.BaseDTO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -17,5 +18,6 @@ public class CheckConfRequest extends BaseDTO {
     /**
      * 验车资源文件类型
      */
+    @ApiModelProperty(value = "验车资源文件类型")
     Integer resourceType;
 }

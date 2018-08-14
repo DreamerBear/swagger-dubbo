@@ -12,6 +12,7 @@ package com.chevrolet.api.service;
 import com.chevrolet.api.dto.CarHisDTO;
 import com.chevrolet.api.dto.query.CarHisQueryDTO;
 import com.subaru.common.entity.APIResult;
+import io.swagger.annotations.ApiOperation;
 
 import java.util.List;
 
@@ -29,5 +30,6 @@ public interface CarHisService {
      * @param carHisQuery
      * @return
      */
+    @ApiOperation("查询车辆历史记录")
     APIResult<List<CarHisDTO>> queryCarHis(CarHisQueryDTO carHisQuery);
 }
