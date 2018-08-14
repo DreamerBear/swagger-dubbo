@@ -16,15 +16,15 @@ import java.util.List;
 public interface CarStatusLockService {
 
     //车辆冻结
-    @ApiOperation("批量保存基础车辆信息")
+    @ApiOperation("车辆冻结")
     BizResult<Boolean> lock(CarLockReq carLockReq);
 
     //车辆解冻
-    @ApiOperation("批量保存基础车辆信息")
+    @ApiOperation("车辆解冻")
     BizResult<Boolean> unlock(CarLockReq carLockReq);
 
     //查询冻结状态
-    @ApiOperation("批量保存基础车辆信息")
+    @ApiOperation("查询冻结状态")
     BizResult<Boolean> isLock(CarLockReq carLockReq);
 
     /**
